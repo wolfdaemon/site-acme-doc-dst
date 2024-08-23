@@ -1,0 +1,178 @@
+/* General body styles */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+article {
+    padding: 20px;
+}
+
+main {
+    flex-grow: 1;
+    /* Allows the main to grow and push footer down */
+}
+
+/* Styling for headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #166454;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+/* Paragraph styling */
+p {
+    margin: 10px 0;
+}
+
+/* Link styling */
+a {
+    color: #0074c8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* List styling */
+ul,
+ol {
+    margin: 10px 0 20px 40px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Preformatted text styling for code */
+pre {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    /* Allows wrapping for long lines */
+    font-family: 'Courier New', Courier, monospace;
+    /* Monospaced font */
+}
+
+/* Code styling */
+code {
+    background-color: #e8e8e8;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Blockquote styling */
+blockquote {
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-left: 5px solid #007bff;
+    background-color: #f9f9f9;
+    color: #555;
+    font-style: italic;
+}
+
+/* Navbar styling */
+nav {
+    background-color: #000000;
+    color: #52565b;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: #166454;
+}
+
+nav form {
+    margin-left: auto;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #000000;
+    color: #52565b;
+    padding: 10px;
+}
+
+/* Aside styling */
+aside a {
+    color: #166454;
+}
+
+/* Footer styling */
+footer {
+    background-color: #2b2e35;
+    color: #52565b;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+
+    h1,
+    h2,
+    h3 {
+        font-size: 1.5em;
+        /* Slightly reduce heading sizes */
+    }
+
+    /* Header styling */
+    header {
+        background-color: #000000;
+        color: #52565b;
+        text-align: center;
+        padding: 10px;
+    }
+}
