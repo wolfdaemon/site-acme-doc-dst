@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- Metadata for this site -->
+
+<head>
+	<!-- Universal Character Encoding -->
+	<meta charset="UTF-8">
+	<!-- Webpage's Title -->
+	<title>Imaging (Windows) | AMCE Technologies DST Wiki</title>
+	<!-- Scripts (loads ASAP)
+    (cite: https://stackoverflow.com/questions/436411/where-should-i-put-script-tags-in-html-markup)-->
+	<script src="" defer></script>
+	<!-- Webpage's Authorship -->
+	<meta name="author" content="Eugene &quot;Wolf&quot; Daemon">
+	<!-- Webpage's Description: Used in search engine result pages -->
+	<meta name="description" content="A Wiki for Vineva&quot;s DST Team">
+	<!-- Webpage's Favicon: The icon for this website -->
+	<link rel="icon" href="../favicon.ico" type="image/x-icon">
+	<!-- Responsive Website Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Webpage's styling; i.e. the Cascading Style Sheet (CSS3) of this page -->
+	<link rel="stylesheet" href="../styles/style.css">
+	<!-- ************************** -->
+</head>
+<!-- Contents of the webpage
+(cite.: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure)
+    Usually contains five basic sections:
+        1. Header (<header>)
+        2. Navigation Bar (<nav>)
+        3. Main Content (<main>)
+        4. Sidebar (<aside>)
+        5. Footer (<footer>)
+    The Sections are marked by comments explaining their use below.
+-->
+
+<body>
+
+	<!-- Document Section: Header
+		(The strip: big heading, logo, tagline, usually the same between pages)
+	-->
+	<header>
+		<h1>ACME Technologies DST Wiki</h1>
+	</header>
+	<!-- Document Section: Navigation Bar
+		(Links to site's main sections; i.e. the main menu)
+	-->
+	<nav>
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><!-- A Search form: another common non-linear way to navigate through a website. -->
+				<form>
+					<input type="search" name="search-query" placeholder="Search query">
+					<input type="submit" value="Go!">
+				</form>
+			</li>
+		</ul>
+	</nav>
+	<!-- Document Section: Main Content 
+		(Main content that's unique to this webpage)
+	-->
+	<main>
+
+		<!-- Webpage contains an article.
+			<article> encloses a block of related content that makes sense on its own without the rest of the page
+			(e.g., a single blog post).
+			Another element I haven't used but could be here is:
+			<section> is similar to <article>, but it is more for grouping together a single part of the page that
+			constitutes one single piece of functionality (e.g., a mini map, or a set of article headlines and
+			summaries), or a theme.
+				It's considered best practice to begin each section with a heading; also note that you can break
+				<article>s up into different <section>s, or <section>s up into different <article>s,
+				depending on the context.
+			But I'll find a use for section when appropriate.
+		-->
+		<article>
+			<h1 id="imaging-company-windows-pcs">Imaging (Windows)</h1>
+			<h2 id="introduction">Introduction</h2>
+			<p>Imaging Company Windows PCs refers to the process of creating an image of a Windows operating system installation for
+				deployment across multiple computers. This procedure is often utilized in corporate environments to ensure
+				consistency, speed up the deployment process, and enable easier recovery and updates of system configurations.</p>
+			<h2 id="table-of-contents">Table of Contents</h2>
+			<ol type="1">
+				<li><a href="#overview">Overview</a><br />
+				</li>
+				<li><a href="#prerequisites">Prerequisites</a><br />
+				</li>
+				<li><a href="#creating-a-windows-pc-image">Creating a Windows PC Image</a><br />
+					3.1 <a href="#selecting-imaging-software">Selecting Imaging Software</a><br />
+					3.2 <a href="#preparing-the-windows-pc">Preparing the Windows PC</a><br />
+					3.3 <a href="#creating-the-image">Creating the Image</a><br />
+				</li>
+				<li><a href="#deploying-the-image">Deploying the Image</a><br />
+					4.1 <a href="#preparation-for-deployment">Preparation for Deployment</a><br />
+					4.2 <a href="#using-deployment-tools">Using Deployment Tools</a><br />
+				</li>
+				<li><a href="#troubleshooting-common-issues">Troubleshooting Common Issues</a><br />
+				</li>
+				<li><a href="#conclusion">Conclusion</a><br />
+				</li>
+				<li><a href="#references">References</a></li>
+			</ol>
+			<h2 id="overview">1. Overview</h2>
+			<p>Creating a system image allows organizations to quickly deploy a standardized operating environment across multiple
+				machines. This procedure not only reduces the time required for setup but also minimizes human error and ensures
+				that updates are uniformly applied.</p>
+			<h2 id="prerequisites">2. Prerequisites</h2>
+			<p>To successfully create and deploy an image of a Windows PC, the following prerequisites should be met:</p>
+			<ul>
+				<li>A Windows PC with a licensed version of the Windows operating system.</li>
+				<li>Sufficient storage space to save the image file(s).</li>
+				<li>Imaging software (e.g., Clonezilla, Macrium Reflect, Acronis True Image).</li>
+				<li>A method for deploying the image to target PCs (e.g., USB drives, network boot).</li>
+			</ul>
+			<h2 id="creating-a-windows-pc-image">3. Creating a Windows PC Image</h2>
+			<h3 id="selecting-imaging-software">3.1 Selecting Imaging Software</h3>
+			<p>Choose an imaging software that aligns with your requirements. Popular options include:</p>
+			<ul>
+				<li><strong>Clonezilla</strong>: A free and open-source partition and disk imaging/cloning program.</li>
+				<li><strong>Macrium Reflect</strong>: A user-friendly application with a free version available for personal use.
+				</li>
+				<li><strong>Acronis True Image</strong>: A professional-grade solution offered through a paid subscription.</li>
+			</ul>
+			<h3 id="preparing-the-windows-pc">3.2 Preparing the Windows PC</h3>
+			<ul>
+				<li><strong>Install Updates</strong>: Ensure the Windows PC has the latest updates installed.</li>
+				<li><strong>Remove Unnecessary Files</strong>: Clean the system by removing unnecessary files, applications, and
+					personal data.</li>
+				<li><strong>Configure Settings</strong>: Tweak system settings (e.g., network configurations, desktop preferences)
+					to match the desired deployment configuration.</li>
+			</ul>
+			<h3 id="creating-the-image">3.3 Creating the Image</h3>
+			<p>Follow the imaging software’s documentation to create the image. Generally, the steps will include:</p>
+			<ol type="1">
+				<li>Launch the imaging software.</li>
+				<li>Select the option to create a disk/image backup.</li>
+				<li>Choose the hard drive/partition to image.</li>
+				<li>Specify the destination for the image file(s).</li>
+				<li>Start the imaging process and wait for completion.</li>
+			</ol>
+			<h2 id="deploying-the-image">4. Deploying the Image</h2>
+			<h3 id="preparation-for-deployment">4.1 Preparation for Deployment</h3>
+			<p>Once the image is created, ensure you have:</p>
+			<ul>
+				<li>A bootable USB drive or network access set up for target PCs.</li>
+				<li>Clear instructions on how to restore/deploy the image.</li>
+			</ul>
+			<h3 id="using-deployment-tools">4.2 Using Deployment Tools</h3>
+			<p>For deployment, utilize the chosen imaging software’s capabilities or consider dedicated deployment solutions such
+				as:</p>
+			<ul>
+				<li><strong>Windows Deployment Services (WDS)</strong>: Utilize Microsoft’s WDS to deploy Windows images over a
+					network.</li>
+				<li><strong>System Center Configuration Manager (SCCM)</strong>: A robust management solution for deploying and
+					managing Windows operating systems.</li>
+			</ul>
+			<h2 id="troubleshooting-common-issues">5. Troubleshooting Common Issues</h2>
+			<ul>
+				<li><strong>Incompatibility Issues</strong>: Ensure that the hardware of the target PCs is compatible with the
+					captured image.</li>
+				<li><strong>Boot Failures</strong>: Verify that the target PC is set to boot from the correct device (USB, network).
+				</li>
+				<li><strong>Corrupted Images</strong>: Always check the integrity of the image after creation to prevent issues
+					during deployment.</li>
+			</ul>
+			<h2 id="conclusion">6. Conclusion</h2>
+			<p>Imaging Windows PCs is a powerful method for streamlining the setup and management of multiple systems. By following
+				the outlined steps, organizations can benefit from a uniform deployment strategy, speeding up processes and reducing
+				potential discrepancies between systems.</p>
+			<h2 id="references">7. References</h2>
+			<ul>
+				<li>Clonezilla Documentation</li>
+				<li>Macrium Reflect Documentation</li>
+				<li>Acronis True Image</li>
+				<li>Microsoft Windows Deployment Services</li>
+			</ul>
+			<p>This document adheres to the Ubuntu Documentation Style Guidelines, ensuring clarity, organization, and ease of
+				navigation for the user.</p>
+		</article>
+
+		<!-- Document Section: Sidebar
+			(Peripheral info, links, quotes, ads, etc. [often inside main])
+		-->
+		<aside>
+			<h2>Related</h2>
+			<pre>NOTE: PROOF OF CONCEPT, NOT FUNCTIONAL</pre>
+
+			<ul>
+				<li><a href="#">Windows</a></li>
+				<li><a href="#">Crash (computing)</a></li>
+				<li><a href="#">Sad Mac</a></li>
+				<li><a href="#">Black screen of death</a></li>
+				<li><a href="#">Machine Check Exception (MCE)</a></li>
+			</ul>
+		</aside>
+
+	</main>
+	<!-- Document Section: Footer
+		(Fineprint, copyright notices, or contact info. Info not critical or secondary to site, SEO stuff, etc/)
+	-->
+	<footer>
+		<p>© 2024 | ACME Technologies, LLC All Rights Reserved</p>
+	</footer>
+</body>
+
+</html>
